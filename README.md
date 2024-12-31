@@ -20,7 +20,7 @@ A simple and responsive currency converter web app built using HTML, CSS, and Ja
 
 1. Clone the repository:
 
-        git clone https://github.com/your-username/currency-converter.git
+        git clone https://github.com/awolcoder/currency-converter.git
     cd currency-converter
     
 
