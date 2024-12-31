@@ -6,7 +6,6 @@ body {
   align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  background-image: url('images/cover.jpg');
   background-size: cover;  
   background-repeat: no-repeat;  
   background-position: center; 
