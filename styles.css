@@ -7,25 +7,24 @@ body {
   height: 100vh;
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
   background-image: url('images/back.jpg');
-  background-size: cover;  
-  background-repeat: no-repeat;  
-  background-position: center; 
-  margin: 0;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0; 
   height: 100vh;
 }
 
 .converter-container {
-  background: #800324;
   border-radius: 20px;
   padding: 20px;
   width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: rgba(186, 144, 240, 0.5);  
+  background-color: rgba(2, 57, 107, 0.6);
 }
 
 header {
@@ -34,13 +33,14 @@ header {
 
 .date {
   font-size: 14px;
-  color: #270354;
+  font-weight: bold;
+  color: #98FF98;
 }
 
 .title {
   font-size: 34px;
   font-weight: bold;
-  color: #014765;
+  color: #98FF98;
 }
 
 .amount-input {
@@ -48,7 +48,8 @@ header {
   width: 100%;
   padding: 10px;
   border: none;
-  border-bottom: 2px solid #130000;
+  color: #98FF98;
+  border-bottom: 2px solid #98FF98;
   outline: none;
   text-align: center;
   background: transparent;
@@ -66,20 +67,28 @@ header {
   font-size: 16px;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  background: #b1b1d2;
+  color: #02396B;
+  border: 1px solid #98FF98;
+  background: #98FF98;
   text-align: center;
   flex: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.currency-dropdown:hover {
+  background-color: #CCFF00;
 }
 
 .swap-btn {
-  background-color: #25004c;
-  color: #ffffff;
+  background-color:#98FF98;
+  color: #02396B;
   border: none;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -88,7 +97,7 @@ header {
 }
 
 .swap-btn:hover {
-  background-color: #641f9a;
+  background-color: #CCFF00;
 }
 
 .convert-btn {
@@ -96,25 +105,26 @@ header {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background-color: #25004c;
-  color: #ffffff;
+  background-color: #98FF98;
+  color: #02396B;
+  font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .convert-btn:hover {
-  background-color: #641f9a;
+  background-color: #CCFF00;
 }
 
 .result {
   font-size: 24px;
-  color: #322301;
+  color: #98FF98;
   margin-top: 20px;
   font-weight: bold;
 }
 
- 
+
 @media (max-width: 600px) {
   .converter-container {
     width: 90%;
@@ -123,7 +133,7 @@ header {
   }
 
   .title {
-    font-size: 28px; 
+    font-size: 28px;
   }
 
   .currency-dropdown {
@@ -131,22 +141,22 @@ header {
   }
 
   .amount-input {
-    font-size: 18px;  
+    font-size: 18px;
   }
 
   .swap-btn {
     width: 35px;
     height: 35px;
-    font-size: 14px;  
+    font-size: 14px;
   }
 
   .convert-btn {
-    font-size: 14px;  
-    padding: 8px 16px; 
+    font-size: 14px;
+    padding: 8px 16px;
   }
 
   .result {
-    font-size: 20px;  
+    font-size: 20px;
   }
 }
 
@@ -157,7 +167,7 @@ header {
   }
 
   .title {
-    font-size: 30px;  
+    font-size: 30px;
   }
 
   .currency-dropdown {
@@ -171,16 +181,16 @@ header {
   .swap-btn {
     width: 38px;
     height: 38px;
-    font-size: 15px;  
+    font-size: 15px; 
   }
 
   .convert-btn {
     font-size: 15px;
-    padding: 9px 18px;  
+    padding: 9px 18px;
   }
 
   .result {
-    font-size: 22px;  
+    font-size: 22px; 
   }
 }
 
@@ -205,15 +215,15 @@ header {
   .swap-btn {
     width: 40px;
     height: 40px;
-    font-size: 16px;  
+    font-size: 16px; 
   }
 
   .convert-btn {
     font-size: 16px;
-    padding: 10px 20px;  
+    padding: 10px 20px;
   }
 
   .result {
-    font-size: 24px;  /
+    font-size: 24px;
   }
 }
