@@ -89,6 +89,7 @@ function swapCurrencies() {
 setCurrentDate();
 initializeCurrencies();
 
+
 // document.getElementById("convertBtn").addEventListener("click", convertCurrency);
 // document.getElementById("swapBtn").addEventListener("click", swapCurrencies);
 
