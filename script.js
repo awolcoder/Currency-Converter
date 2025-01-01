@@ -89,7 +89,25 @@ function swapCurrencies() {
 setCurrentDate();
 initializeCurrencies();
 
-document.getElementById("convertBtn").addEventListener("click", convertCurrency);
-document.getElementById("swapBtn").addEventListener("click", swapCurrencies);
+// document.getElementById("convertBtn").addEventListener("click", convertCurrency);
+// document.getElementById("swapBtn").addEventListener("click", swapCurrencies);
+
+const convertBtn = document.getElementById("convertBtn");
+const swapBtn = document.getElementById("swapBtn");
+
+console.log("Convert Button:", convertBtn);
+console.log("Swap Button:", swapBtn);
+
+if(convertBtn){
+  convertBtn.addEventListener("click", convertBtn);
+} else {
+  console.error("Convert Button not found!");
+}
+
+if(swapBtn) {
+  swapBtn.addEventListener("click", swapCurrencies);
+} else {
+  console.error("Swap Button not found!");
+}
 
 amountInput.focus();
